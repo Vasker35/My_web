@@ -1,0 +1,35 @@
+<!-- ссылка на шаблон -->
+{% extends "base.html" %}
+
+<!-- Разметка основной части -->
+{% block main %}
+
+<div>
+    <!-- элемент формы ввода информации -->
+    <form action="" method="post">
+        <p>
+            <label>Web-site:</label>
+            <input type="text" name="site">
+        </p>
+        <p>
+            <label>Password:</label>
+            <input type="text" name="pwd">
+        </p>
+        <p>
+            <label>Numper of char:</label>
+            <input type="text" name="num" value="-">
+        </p>
+        <p>
+            <input type="submit">
+        </p>
+
+        <!-- вывод результата -->
+        <div>
+            {% if message %}
+                <h3>Подвал</h3>
+            {% endid %}
+        </div>
+    </form>
+</div>
+
+{% endblock %}
