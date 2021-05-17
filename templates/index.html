@@ -4,9 +4,9 @@
 <!-- Разметка основной части -->
 {% block main %}
 
-<div>
+<div class="_content"> 
     <!-- элемент формы ввода информации -->
-    <form action="" method="post">
+    <form method="post">
         <p>
             <label>Web-site:</label>
             <input type="text" name="site">
@@ -26,8 +26,8 @@
         <!-- вывод результата -->
         <div>
             {% if message %}
-                <h3>Подвал</h3>
-            {% endid %}
+                <h3>{{ message }}</h3>
+            {% endif %}
         </div>
     </form>
 </div>
